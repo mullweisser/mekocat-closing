@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html>
-<body>
-
-<h1 style="font-family:arial;">MekoCat stänger under midsommarhelgen</h1>
-  
-<img src="mekotack.jpg" alt="MekoTack till MekoCat">
-
-</body>
+  <head>
+    <style>
+      #blink {
+        font-size: 50px;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: black;
+        transition: 0.7s;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+    <p id="blink">MekoCat stänger under midsommarhelgen!</p>
+    <script type="text/javascript">
+      var blink = document.getElementById('blink');
+      setInterval(function() {
+        blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+      }, 1000);
+    </script>
+    <br><br>
+    <img src="mekotack.jpg" width="50%" height="50%">
+    </center>
+  </body>
 </html>
