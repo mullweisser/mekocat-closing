@@ -3,22 +3,25 @@
   <head>
     <style>
       #blink {
-        font-size: 30px;
+        font-size: 50px;
         font-weight: bold;
         font-family: sans-serif;
-        color: #8f0000;
+        color: black;
         transition: 0.55s;
       }
     </style>
   </head>
   <body>
+    <center>
     <p id="blink">MekoCat stänger under midsommarhelgen!</p>
     <script type="text/javascript">
       var blink = document.getElementById('blink');
       setInterval(function() {
         blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
       }, 800);
-    </script><br><br>
-<img src="mekotack.jpg">
+    </script>
+      <br><br>
+  <img src="mekotack.jpg" width="50%" height="50%">
+    </center>
   </body>
 </html>
